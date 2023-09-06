@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(227, 200, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    height: 100vh;
+    letter-spacing: 3px;
+}
+
+img{
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(42, 30, 13);
+}
+
+span:not(#time, #day){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p{
+    text-transform: capitalize;
+}
+
+.username{
+    text-transform: capitalize;
+    /* font-size: 24px; */
+}
