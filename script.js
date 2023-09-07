@@ -26,7 +26,11 @@ const updateTime = () => {
   let currentTime = "";
 
   if (hrs < 12) {
-    currentTime = `${hrs} : ${mins} : ${secs} AM`;
+    if (hrs.toString().length < 2) {
+      currentTime = `0${hrs} : ${mins} : ${secs} AM`;
+    } else {
+      currentTime = `${hrs} : ${mins} : ${secs} AM`;
+    }
   } else {
     currentTime = `${hrs} : ${mins} : ${secs} PM`;
   }
