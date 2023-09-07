@@ -23,16 +23,16 @@ const updateTime = () => {
   const hrs = new Date().getHours();
   const mins = new Date().getMinutes();
   const secs = new Date().getSeconds();
+
+  const currentHr = hrs.toString().length < 2 ? `0${hrs}` : hrs;
+  const currentMin = mins.toString().length < 2 ? `0${mins}` : mins;
+  const currentSec = secs.toString().length < 2 ? `0${secs}` : secs;
   let currentTime = "";
 
   if (hrs < 12) {
-    if (hrs.toString().length < 2) {
-      currentTime = `0${hrs} : ${mins} : ${secs} AM`;
-    } else {
-      currentTime = `${hrs} : ${mins} : ${secs} AM`;
-    }
+    currentTime = `${currentHr} : ${currentMin} : ${currentSec} AM`;
   } else {
-    currentTime = `${hrs} : ${mins} : ${secs} PM`;
+    currentTime = `${currentHr} : ${currentMin} : ${currentSec} PM`;
   }
 
   TIME.textContent = currentTime;

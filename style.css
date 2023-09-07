@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(227, 200, 164);
+    background-color: #e4cbab;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,34 +20,41 @@ body {
 
 img{
     border-radius: 50%;
-    border: 4px solid #614114;
+    border: 3px solid #754a0e;
     width: 200px;
     height: 200px;
 }
 
-span:not(#time, #day){
-    text-transform: uppercase;
+p{
+    text-transform: capitalize;
     font-weight: bold;
 }
 
-p{
-    text-transform: capitalize;
-}
+
 
 a{
     text-decoration: none;
     color: #754a0e;
     word-break: break-all;
+    text-transform: capitalize;
+}
+
+a:hover{
+    color: #48300f;;
 }
 
 .username{
     text-transform: capitalize;
+}
 
-    /* font-size: 24px; */
+.date{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 @media (max-width: 769px) {
     body{
-        font-size: 18px;
+        font-size: 20px;
     }
 }

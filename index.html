@@ -9,19 +9,23 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-
-    <img src="./image/profile.jpg" alt="oghenemine oghorodi" data-testid="slackDisplayImage" />
+    <p class="date">
+      <span class="day" data-testid="currentDayOfTheWeek" id="day"></span>,
+      <span class="time" data-testid="currentUTCTime" id="time"></span>
+    </p>
+    <img
+      src="./image/profile.jpg"
+      alt="oghenemine oghorodi"
+      data-testid="slackDisplayImage"
+    />
     <h1 class="username" data-testid="slackUserName">oghenemine oghorodi</h1>
-    <p class="day" data-testid="currentDayOfTheWeek">
-      <span>current day: </span> <span id="day"></span>
-    </p>
-    <p class="time" data-testid="currentUTCTime">
-      <span>current time: </span><span id="time"></span>
-    </p>
-    <p data-testid="myTrack"><span>track: </span>Frontend</p>
-    <p class="githubLink" data-testid="githubURL">
-      <span>github: </span><a href="https://github.com/OGHENEMINE/zuriHtmlTask">github.com/OGHENEMINE/zuriHtmlTask</a>
-    </p>
+    <p data-testid="myTrack">frontend track</p>
+    <a
+      class="githubLink"
+      data-testid="githubURL"
+      href="https://github.com/OGHENEMINE/zuriHtmlTask"
+      >github.com/OGHENEMINE/zuriHtmlTask</a
+    >
 
     <script src="./script.js"></script>
   </body>
